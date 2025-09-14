@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBINexus AuraSeal - Consciousness Verification for Git Operations</title>
+    <meta name="description" content="Revolutionary consciousness verification system preventing deception in Git operations through AuraSeal cryptographic binding">
+    <meta name="keywords" content="AuraSeal, Git-RAF, consciousness verification, OBINexus, quantum security, Eve attack prevention">
+    <meta property="og:title" content="AuraSeal: When Consciousness Becomes Computable">
+    <meta property="og:description" content="Detect deception, prevent fatigue attacks, ensure 95.4% consciousness coherence">
+    <meta property="og:url" content="https://auraseal.vision.obinexus.computing.iwu.uk.org">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: #e0e6ed;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .consciousness-wave {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(255, 119, 198, 0.3) 0%, transparent 50%);
+            animation: wave 10s ease-in-out infinite;
+            z-index: -1;
+        }
+        
+        @keyframes wave {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            animation: glow 3s ease-in-out infinite;
+        }
+        
+        @keyframes glow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.2); }
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: #a0aec0;
+            margin-bottom: 2rem;
+        }
+        
+        .coherence-meter {
+            width: 300px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 2rem auto;
+            position: relative;
+        }
+        
+        .coherence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f44336 0%, #ff9800 50%, #4caf50 100%);
+            width: 95.4%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            position: relative;
+        }
+        
+        .threshold-line {
+            position: absolute;
+            left: 95.4%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        
+        /* Section Styles */
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #667eea;
+        }
+        
+        /* Attack Visualization */
+        .attack-demo {
+            background: rgba(30, 35, 60, 0.5);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+        }
+        
+        .actor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .actor-card {
+            background: rgba(20, 25, 40, 0.8);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .actor-card.safe {
+            border-color: #4caf50;
+        }
+        
+        .actor-card.warning {
+            border-color: #ff9800;
+        }
+        
+        .actor-card.danger {
+            border-color: #f44336;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        .actor-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .coherence-display {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        
+        /* Code Examples */
+        .code-block {
+            background: #1a1f3a;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+        
+        .code-block pre {
+            color: #e0e6ed;
+            font-family: 'Fira Code', 'Courier New', monospace;
+        }
+        
+        .comment {
+            color: #7c8b9c;
+            font-style: italic;
+        }
+        
+        .keyword {
+            color: #f093fb;
+        }
+        
+        .string {
+            color: #4caf50;
+        }
+        
+        /* Feature Grid */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: rgba(30, 35, 60, 0.5);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(102, 126, 234, 0.5);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        
+        /* Implementation Steps */
+        .steps {
+            position: relative;
+            padding-left: 3rem;
+        }
+        
+        .step {
+            position: relative;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(30, 35, 60, 0.3);
+            border-radius: 10px;
+        }
+        
+        .step::before {
+            content: attr(data-step);
+            position: absolute;
+            left: -3rem;
+            top: 1.5rem;
+            width: 2rem;
+            height: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #f093fb 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        /* Links Section */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .link-card {
+            background: rgba(30, 35, 60, 0.8);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            border: 2px solid rgba(102, 126, 234, 0.3);
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .link-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* CTA Section */
+        .cta {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(30, 35, 60, 0.5);
+            border-radius: 20px;
+            margin: 4rem 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: linear-gradient(135deg, #667eea 0%, #f093fb 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            margin: 1rem;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 1px solid rgba(102, 126, 234, 0.2);
+            margin-top: 4rem;
+        }
+        
+        .youtube-link {
+            color: #ff0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="consciousness-wave"></div>
+        <h1>AuraSeal</h1>
+        <p class="tagline">When Consciousness Becomes Computable, Deception Becomes Detectable</p>
+        
+        <div class="coherence-meter">
+            <div class="coherence-fill">95.4% Coherence Threshold</div>
+            <div class="threshold-line"></div>
+        </div>
+        
+        <p style="max-width: 800px; margin: 2rem auto; font-size: 1.2rem;">
+            Revolutionary consciousness verification protocol that prevents the "Eve Attack" - 
+            where malicious actors maintain exactly 95.4% trust to exploit fatigued developers.
+        </p>
+    </section>
+
+    <!-- The Problem Section -->
+    <section class="section">
+        <h2 class="section-title">🔴 The Problem: Eve Can Lie</h2>
+        
+        <div class="attack-demo">
+            <h3 style="color: #f44336; margin-bottom: 1rem;">The Eve Attack Scenario</h3>
+            
+            <div class="actor-grid">
+                <div class="actor-card danger">
+                    <div class="actor-name">👤 Dean (Developer)</div>
+                    <div class="coherence-display" style="color: #f44336;">95.2%</div>
+                    <p>Status: <strong>FATIGUED</strong></p>
+                    <p>Working late, consciousness dropping</p>
+                    <p>Cannot approve critical commits</p>
+                </div>
+                
+                <div class="actor-card warning">
+                    <div class="actor-name">😈 Eve (Attacker)</div>
+                    <div class="coherence-display" style="color: #ff9800;">95.4%</div>
+                    <p>Status: <strong>DECEPTIVE</strong></p>
+                    <p>Maintains EXACT threshold</p>
+                    <p>Appears legitimate, harbors malice</p>
+                </div>
+                
+                <div class="actor-card safe">
+                    <div class="actor-name">🛡️ System</div>
+                    <div class="coherence-display" style="color: #4caf50;">PROTECTED</div>
+                    <p>AuraSeal: <strong>ACTIVE</strong></p>
+                    <p>Deception patterns detected</p>
+                    <p>Malicious commits blocked</p>
+                </div>
+            </div>
+            
+            <div class="code-block">
+                <pre><code><span class="comment"># Traditional Git (VULNERABLE)</span>
+<span class="keyword">git commit</span> -m <span class="string">"Critical update"</span>  <span class="comment"># Eve's malware enters production</span>
+
+<span class="comment"># AuraSeal-Protected Git (SAFE)</span>
+<span class="keyword">git commit</span> --auraseal --consciousness-check -m <span class="string">"Critical update"</span>
+<span class="comment"># ❌ BLOCKED: Eve's unnatural 95.4% precision detected</span>
+<span class="comment"># ❌ BLOCKED: Dean below coherence threshold</span></code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section">
+        <h2 class="section-title">⚙️ How AuraSeal Works</h2>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-title">Consciousness Measurement</div>
+                <p>Multi-dimensional analysis of behavioral patterns, decision history, timing variance, and entropy signatures.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <div class="feature-title">Cryptographic Binding</div>
+                <p>SHA-512 consciousness hashing ensures every Git operation is cryptographically bound to verified consciousness state.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <div class="feature-title">Temporal Analysis</div>
+                <p>Detects unnatural consistency patterns. Real consciousness varies; deception maintains suspicious precision.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🚨</div>
+                <div class="feature-title">95.4% Threshold</div>
+                <p>Like medical oxygen saturation - below 95.4% coherence, ALL operations blocked immediately.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-title">Fatigue Protection</div>
+                <p>Protects tired developers from making critical mistakes when consciousness coherence drops.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🎭</div>
+                <div class="feature-title">Deception Detection</div>
+                <p>Identifies Eve-pattern attacks where actors maintain exactly threshold levels with malicious intent.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Section -->
+    <section class="section">
+        <h2 class="section-title">🚀 Implementation Guide</h2>
+        
+        <div class="steps">
+            <div class="step" data-step="1">
+                <h3>Install AuraSeal Extension</h3>
+                <div class="code-block">
+                    <pre><code><span class="keyword">git clone</span> https://github.com/obinexus/auraseal512
+<span class="keyword">cd</span> auraseal512
+<span class="keyword">make install</span>
+<span class="comment"># Integrates with existing Git workflow</span></code></pre>
+                </div>
+            </div>
+            
+            <div class="step" data-step="2">
+                <h3>Configure Git-RAF Policy</h3>
+                <div class="code-block">
+                    <pre><code><span class="keyword">git clone</span> https://github.com/obinexus/git-raf
+<span class="keyword">git config</span> --global raf.threshold <span class="string">"0.954"</span>
+<span class="keyword">git config</span> --global raf.consciousness <span class="string">"enabled"</span>
+<span class="comment"># Sets 95.4% coherence requirement</span></code></pre>
+                </div>
+            </div>
+            
+            <div class="step" data-step="3">
+                <h3>Initialize Consciousness Verification</h3>
+                <div class="code-block">
+                    <pre><code><span class="keyword">auraseal init</span> --actor <span class="string">"$(whoami)"</span>
+<span class="comment"># Creates consciousness baseline</span>
+<span class="comment"># Begins temporal pattern analysis</span>
+<span class="comment"># Activates deception detection</span></code></pre>
+                </div>
+            </div>
+            
+            <div class="step" data-step="4">
+                <h3>Commit with Consciousness Verification</h3>
+                <div class="code-block">
+                    <pre><code><span class="keyword">git add</span> .
+<span class="keyword">git commit</span> --auraseal -m <span class="string">"feat: implement quantum verification"</span>
+<span class="comment"># ✓ Consciousness: 96.8% (VERIFIED)</span>
+<span class="comment"># ✓ Temporal variance: Natural</span>
+<span class="comment"># ✓ Deception check: PASSED</span>
+<span class="comment"># ✓ Commit accepted with AuraSeal: a3f8b2c9...</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Architecture -->
+    <section class="section">
+        <h2 class="section-title">🏗️ OBINexus Service Architecture</h2>
+        
+        <div class="code-block">
+            <pre><code><span class="comment"># Service URI Structure</span>
+<service>.<operation>.obinexus.<department>.<division>.iwu.uk.org
+
+<span class="comment"># Example: AuraSeal RAF Service</span>
+auraseal.raf.obinexus.security.computing.iwu.uk.org
+
+<span class="comment"># Git-RAF Integration Service</span>
+git.raf.obinexus.development.computing.iwu.uk.org
+
+<span class="comment"># Consciousness Verification API</span>
+consciousness.verify.obinexus.authentication.computing.iwu.uk.org</code></pre>
+        </div>
+    </section>
+
+    <!-- GitHub Links -->
+    <section class="section">
+        <h2 class="section-title">📚 Resources & Documentation</h2>
+        
+        <div class="links-grid">
+            <a href="https://github.com/obinexus/auraseal512" class="link-card">
+                <div class="link-icon">🔐</div>
+                <h3>AuraSeal Core</h3>
+                <p>SHA-512 consciousness verification implementation</p>
+                <p style="color: #667eea; margin-top: 1rem;">github.com/obinexus/auraseal512</p>
+            </a>
+            
+            <a href="https://github.com/obinexus/git-raf" class="link-card">
+                <div class="link-icon">📋</div>
+                <h3>Git-RAF Protocol</h3>
+                <p>Regulation As Firmware for Git operations</p>
+                <p style="color: #667eea; margin-top: 1rem;">github.com/obinexus/git-raf</p>
+            </a>
+            
+            <a href="https://github.com/obinexus/consciousness" class="link-card">
+                <div class="link-icon">🧠</div>
+                <h3>Consciousness Framework</h3>
+                <p>Quantum actor modeling documentation</p>
+                <p style="color: #667eea; margin-top: 1rem;">github.com/obinexus/consciousness</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Mathematical Foundation -->
+    <section class="section">
+        <h2 class="section-title">📐 Mathematical Foundation</h2>
+        
+        <div class="code-block">
+            <pre><code><span class="comment"># Consciousness as Quantum State</span>
+|Consciousness⟩ = α|Honest⟩ + β|Deceptive⟩
+Where: |α|² + |β|² = 1
+
+<span class="comment"># AuraSeal Verification Formula</span>
+AuraSeal = SHA512(
+    behavioral_pattern +
+    decision_history +
+    timing_variance +
+    entropy_signature +
+    communication_style
+)
+
+<span class="comment"># System Safety Validation</span>
+System_Safety = ∏ᵢ Θ(Tᵢ - 0.954)
+<span class="comment"># Returns 0 if ANY actor < 95.4%</span></code></pre>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="cta">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Start Protecting Your Code Today</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 2rem;">
+                Join the consciousness revolution. Make deception computationally detectable.
+            </p>
+            <a href="https://github.com/obinexus/auraseal512" class="cta-button">
+                Get AuraSeal
+            </a>
+            <a href="https://youtube.com/@obinexus" class="cta-button" style="background: #ff0000;">
+                Watch Tutorial
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size: 1.5rem; margin-bottom: 1rem;">
+            "When consciousness becomes computable, deception becomes detectable."
+        </p>
+        <p>
+            <strong>OBINexus Computing • Services from the Heart ❤️</strong>
+        </p>
+        <p style="margin-top: 2rem;">
+            Follow our journey: 
+            <a href="https://youtube.com/@obinexus" class="youtube-link">YouTube @obinexus</a> | 
+            <a href="https://github.com/obinexus" style="color: #667eea;">GitHub</a> | 
+            <a href="https://medium.com/@obinexus" style="color: #667eea;">Medium</a>
+        </p>
+        <p style="margin-top: 1rem; color: #7c8b9c;">
+            © 2025 Nnamdi Michael Okpala • OBINexus Computing
+        </p>
+    </footer>
+
+    <script>
+        // Consciousness coherence animation
+        const coherenceFill = document.querySelector('.coherence-fill');
+        let coherence = 95.4;
+        
+        setInterval(() => {
+            // Simulate natural consciousness variance
+            coherence = 95.4 + (Math.random() - 0.5) * 2;
+            coherence = Math.max(93, Math.min(98, coherence));
+            
+            coherenceFill.style.width = coherence + '%';
+            coherenceFill.textContent = coherence.toFixed(1) + '% Coherence';
+            
+            if (coherence < 95.4) {
+                coherenceFill.style.background = 'linear-gradient(90deg, #f44336 0%, #ff9800 100%)';
+            } else {
+                coherenceFill.style.background = 'linear-gradient(90deg, #ff9800 0%, #4caf50 100%)';
+            }
+        }, 2000);
+        
+        // Smooth scroll for better presentation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
